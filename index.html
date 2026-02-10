@@ -560,16 +560,20 @@
             background: var(--black);
         }
 
+        .pricing .section-subtitle {
+            margin-bottom: 24px;
+        }
+
         .pricing-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-            gap: 16px;
+            gap: 14px;
             max-width: 1000px;
             margin: 0 auto;
         }
 
         .pricing-card {
-            padding: 32px;
+            padding: 20px;
             position: relative;
             background: var(--white-05);
             backdrop-filter: blur(20px);
@@ -588,28 +592,28 @@
 
         .pricing-card .badge {
             position: absolute;
-            top: 24px;
-            right: 24px;
+            top: 16px;
+            right: 16px;
             background: var(--neon-green);
             color: var(--black);
-            padding: 8px 20px;
+            padding: 6px 16px;
             border-radius: 20px;
-            font-size: 12px;
+            font-size: 11px;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
         .pricing-card h3 {
-            font-size: 28px;
-            margin-bottom: 12px;
+            font-size: 22px;
+            margin-bottom: 8px;
             font-weight: 600;
         }
 
         .pricing-card .price {
             font-size: 48px;
             font-weight: 700;
-            margin-bottom: 8px;
+            margin-bottom: 4px;
             color: var(--neon-green);
             text-shadow: 0 0 20px var(--neon-green-glow);
             letter-spacing: -1px;
@@ -617,32 +621,38 @@
 
         .pricing-card .price-note {
             color: rgba(255, 255, 255, 0.5);
-            margin-bottom: 32px;
+            margin-bottom: 16px;
             font-size: 14px;
             font-weight: 300;
         }
 
         .pricing-card ul {
             list-style: none;
-            margin-bottom: 32px;
+            margin-bottom: 16px;
         }
 
         .pricing-card ul li {
-            padding: 12px 0;
+            padding: 6px 0;
             border-bottom: 1px solid var(--white-10);
             display: flex;
             align-items: center;
-            gap: 10px;
-            font-size: 15px;
+            gap: 8px;
+            font-size: 14px;
             font-weight: 400;
+            line-height: 1.4;
         }
 
         .pricing-card ul li::before {
             content: '✓';
             color: var(--neon-green);
             font-weight: 700;
-            font-size: 20px;
+            font-size: 18px;
             filter: drop-shadow(0 0 8px var(--neon-green-glow));
+        }
+
+        .pricing-card .cta-btn {
+            padding: 10px 24px;
+            font-size: 16px;
         }
 
         /* How It Works */
