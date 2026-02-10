@@ -6,7 +6,7 @@
     <title>BizClaw — AI-сотрудники для вашего бизнеса</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&subset=latin,cyrillic&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -32,7 +32,7 @@
         }
 
         body {
-            font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             background: var(--black);
             color: var(--white);
             line-height: 1.6;
@@ -310,10 +310,10 @@
         }
 
         .hero h1 {
-            font-size: clamp(48px, 8vw, 96px);
+            font-size: clamp(32px, 8vw, 96px);
             font-weight: 700;
             line-height: 1.1;
-            margin-bottom: 32px;
+            margin-bottom: 24px;
             letter-spacing: -2px;
         }
 
@@ -330,15 +330,16 @@
         }
 
         .hero p {
-            font-size: clamp(18px, 2.5vw, 24px);
+            font-size: clamp(14px, 2.5vw, 24px);
             color: rgba(255, 255, 255, 0.7);
-            margin-bottom: 48px;
+            margin-bottom: 32px;
             line-height: 1.7;
+            font-weight: 300;
         }
 
         /* Section */
         section {
-            padding: 120px 0;
+            padding: 70px 0;
             position: relative;
             opacity: 0;
             transform: translateY(60px);
@@ -351,10 +352,10 @@
         }
 
         .section-title {
-            font-size: clamp(40px, 6vw, 72px);
+            font-size: clamp(28px, 6vw, 72px);
             font-weight: 700;
             text-align: center;
-            margin-bottom: 24px;
+            margin-bottom: 16px;
             letter-spacing: -1.5px;
         }
 
@@ -364,13 +365,14 @@
         }
 
         .section-subtitle {
-            font-size: clamp(16px, 2vw, 20px);
+            font-size: clamp(14px, 2vw, 20px);
             color: rgba(255, 255, 255, 0.6);
             text-align: center;
-            margin-bottom: 80px;
+            margin-bottom: 48px;
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
+            font-weight: 300;
         }
 
         /* Problems Section */
@@ -381,58 +383,61 @@
         .problems-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 32px;
+            gap: 20px;
         }
 
         .problem-card {
-            padding: 48px;
+            padding: 32px;
         }
 
         .problem-icon {
-            font-size: 56px;
-            margin-bottom: 24px;
+            font-size: 48px;
+            margin-bottom: 16px;
             filter: drop-shadow(0 0 20px var(--neon-green-glow));
         }
 
         .problem-card h3 {
-            font-size: 28px;
-            margin-bottom: 16px;
+            font-size: 24px;
+            margin-bottom: 12px;
             font-weight: 600;
         }
 
         .problem-card p {
             color: rgba(255, 255, 255, 0.7);
-            line-height: 1.8;
-            font-size: 16px;
+            line-height: 1.6;
+            font-size: 15px;
+            font-weight: 300;
         }
 
         /* Services Section */
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: 32px;
+            gap: 20px;
         }
 
         .service-card {
-            padding: 48px;
+            padding: 32px;
         }
 
         .service-icon {
-            font-size: 48px;
-            margin-bottom: 24px;
+            font-size: 40px;
+            margin-bottom: 16px;
             display: inline-block;
             filter: drop-shadow(0 0 15px var(--neon-green-glow));
         }
 
         .service-card h3 {
-            font-size: 24px;
-            margin-bottom: 16px;
+            font-size: 20px;
+            margin-bottom: 12px;
             font-weight: 600;
         }
 
         .service-card p {
             color: rgba(255, 255, 255, 0.7);
-            line-height: 1.8;
+            line-height: 1.6;
+            font-size: 15px;
+            font-weight: 300;
         }
 
         /* Cases Section */
@@ -443,21 +448,22 @@
         .cases-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 32px;
+            gap: 20px;
         }
 
         .case-card {
-            padding: 48px;
+            padding: 32px;
         }
 
         .case-card .quote {
-            font-size: 18px;
+            font-size: 16px;
             font-style: italic;
             color: rgba(255, 255, 255, 0.8);
-            margin-bottom: 32px;
-            line-height: 1.8;
+            margin-bottom: 24px;
+            line-height: 1.6;
             position: relative;
             padding-left: 24px;
+            font-weight: 300;
         }
 
         .case-card .quote::before {
@@ -493,25 +499,26 @@
         .case-card .author-info h4 {
             font-weight: 600;
             margin-bottom: 4px;
-            font-size: 18px;
+            font-size: 16px;
         }
 
         .case-card .author-info p {
             color: rgba(255, 255, 255, 0.5);
-            font-size: 14px;
+            font-size: 13px;
+            font-weight: 300;
         }
 
         /* Pricing Section */
         .pricing-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-            gap: 40px;
+            gap: 20px;
             max-width: 1000px;
             margin: 0 auto;
         }
 
         .pricing-card {
-            padding: 56px;
+            padding: 40px;
             position: relative;
         }
 
@@ -537,13 +544,13 @@
         }
 
         .pricing-card h3 {
-            font-size: 32px;
-            margin-bottom: 16px;
+            font-size: 28px;
+            margin-bottom: 12px;
             font-weight: 600;
         }
 
         .pricing-card .price {
-            font-size: 56px;
+            font-size: 48px;
             font-weight: 700;
             margin-bottom: 8px;
             color: var(--neon-green);
@@ -553,22 +560,24 @@
 
         .pricing-card .price-note {
             color: rgba(255, 255, 255, 0.5);
-            margin-bottom: 40px;
-            font-size: 16px;
+            margin-bottom: 32px;
+            font-size: 14px;
+            font-weight: 300;
         }
 
         .pricing-card ul {
             list-style: none;
-            margin-bottom: 40px;
+            margin-bottom: 32px;
         }
 
         .pricing-card ul li {
-            padding: 16px 0;
+            padding: 12px 0;
             border-bottom: 1px solid var(--white-10);
             display: flex;
             align-items: center;
-            gap: 12px;
-            font-size: 16px;
+            gap: 10px;
+            font-size: 15px;
+            font-weight: 400;
         }
 
         .pricing-card ul li::before {
@@ -587,7 +596,7 @@
         .steps {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 48px;
+            gap: 24px;
         }
 
         .step {
@@ -596,17 +605,17 @@
         }
 
         .step-number {
-            width: 96px;
-            height: 96px;
+            width: 80px;
+            height: 80px;
             background: linear-gradient(135deg, var(--neon-green) 0%, #A8D700 100%);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 40px;
+            font-size: 36px;
             font-weight: 700;
             color: var(--black);
-            margin: 0 auto 32px;
+            margin: 0 auto 20px;
             box-shadow: 0 0 40px var(--neon-green-glow);
             position: relative;
         }
@@ -627,14 +636,16 @@
         }
 
         .step h3 {
-            font-size: 24px;
-            margin-bottom: 16px;
+            font-size: 20px;
+            margin-bottom: 12px;
             font-weight: 600;
         }
 
         .step p {
             color: rgba(255, 255, 255, 0.7);
-            line-height: 1.8;
+            line-height: 1.6;
+            font-size: 15px;
+            font-weight: 300;
         }
 
         /* FAQ Section */
@@ -658,13 +669,13 @@
         }
 
         .faq-question {
-            padding: 28px 32px;
+            padding: 20px 24px;
             cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
             font-weight: 600;
-            font-size: 18px;
+            font-size: 16px;
             transition: all 0.3s ease;
         }
 
@@ -686,36 +697,38 @@
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.4s ease, padding 0.4s ease;
-            padding: 0 32px;
+            padding: 0 24px;
         }
 
         .faq-item.active .faq-answer {
             max-height: 500px;
-            padding: 0 32px 28px;
+            padding: 0 24px 20px;
         }
 
         .faq-answer p {
             color: rgba(255, 255, 255, 0.7);
-            line-height: 1.8;
+            line-height: 1.6;
+            font-size: 15px;
+            font-weight: 300;
         }
 
         /* Footer */
         footer {
             background: var(--gray-darker);
-            padding: 80px 0 40px;
+            padding: 60px 0 32px;
             border-top: 1px solid var(--white-10);
         }
 
         .footer-content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 48px;
-            margin-bottom: 48px;
+            gap: 32px;
+            margin-bottom: 32px;
         }
 
         .footer-section h4 {
-            font-size: 20px;
-            margin-bottom: 24px;
+            font-size: 18px;
+            margin-bottom: 16px;
             color: var(--neon-green);
             font-weight: 600;
         }
@@ -725,9 +738,10 @@
             color: rgba(255, 255, 255, 0.6);
             text-decoration: none;
             display: block;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             transition: color 0.3s ease;
-            font-size: 15px;
+            font-size: 14px;
+            font-weight: 300;
         }
 
         .footer-section a:hover {
@@ -736,20 +750,21 @@
 
         .footer-bottom {
             text-align: center;
-            padding-top: 32px;
+            padding-top: 24px;
             border-top: 1px solid var(--white-10);
             color: rgba(255, 255, 255, 0.4);
-            font-size: 14px;
+            font-size: 13px;
+            font-weight: 300;
         }
 
         /* Mobile Responsive */
         @media (max-width: 768px) {
             .hero {
-                padding-top: 120px;
+                padding-top: 100px;
             }
 
             section {
-                padding: 80px 0;
+                padding: 50px 0;
             }
 
             .services-grid,
