@@ -410,34 +410,52 @@
         }
 
         /* Services Section */
+        .services {
+            background: linear-gradient(to bottom, var(--gray-dark) 0%, #f5f5f5 10%, #f5f5f5 90%, var(--gray-dark) 100%);
+        }
+
+        .services .section-title,
+        .services .section-subtitle {
+            color: var(--black);
+        }
+
+        .services .section-title .highlight {
+            color: #8BC400;
+            text-shadow: 0 0 20px rgba(139, 196, 0, 0.3);
+        }
+
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
         }
 
         .service-card {
-            padding: 32px;
+            padding: 24px 20px;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(139, 196, 0, 0.2);
         }
 
-        .service-icon {
-            font-size: 40px;
-            margin-bottom: 16px;
-            display: inline-block;
-            filter: drop-shadow(0 0 15px var(--neon-green-glow));
+        .service-card:hover {
+            background: rgba(255, 255, 255, 0.85);
+            border-color: #8BC400;
+            box-shadow: 0 20px 60px rgba(139, 196, 0, 0.25),
+                        0 0 40px rgba(139, 196, 0, 0.15) inset;
         }
 
         .service-card h3 {
-            font-size: 20px;
-            margin-bottom: 12px;
+            font-size: 18px;
+            margin-bottom: 8px;
             font-weight: 600;
+            color: var(--black);
         }
 
         .service-card p {
-            color: rgba(255, 255, 255, 0.7);
-            line-height: 1.6;
-            font-size: 15px;
-            font-weight: 300;
+            color: rgba(10, 10, 10, 0.7);
+            line-height: 1.5;
+            font-size: 14px;
+            font-weight: 400;
         }
 
         /* Cases Section */
@@ -508,7 +526,49 @@
             font-weight: 300;
         }
 
+        /* Clients Section */
+        .clients {
+            background: #f5f5f5;
+            padding: 50px 0;
+        }
+
+        .clients .section-title {
+            color: var(--black);
+            font-size: clamp(24px, 5vw, 48px);
+            margin-bottom: 40px;
+        }
+
+        .clients .section-title .highlight {
+            color: #8BC400;
+            text-shadow: 0 0 15px rgba(139, 196, 0, 0.3);
+        }
+
+        .clients-grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 48px;
+            flex-wrap: wrap;
+        }
+
+        .client-logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: rgba(10, 10, 10, 0.4);
+            letter-spacing: -0.5px;
+            transition: all 0.3s ease;
+        }
+
+        .client-logo:hover {
+            color: #8BC400;
+            transform: scale(1.05);
+        }
+
         /* Pricing Section */
+        .pricing {
+            background: linear-gradient(to bottom, var(--gray-dark) 0%, rgba(245, 245, 245, 0.05) 5%, rgba(245, 245, 245, 0.05) 95%, var(--gray-dark) 100%);
+        }
+
         .pricing-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
@@ -520,6 +580,9 @@
         .pricing-card {
             padding: 40px;
             position: relative;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--white-10);
         }
 
         .pricing-card.featured {
@@ -787,6 +850,14 @@
                 width: 300px;
                 height: 300px;
             }
+
+            .clients-grid {
+                gap: 32px;
+            }
+
+            .client-logo {
+                font-size: 22px;
+            }
         }
 
         /* Smooth Animations */
@@ -870,33 +941,27 @@
             <h2 class="section-title">Что умеют наши <span class="highlight">AI-сотрудники</span></h2>
             <p class="section-subtitle">Полный набор инструментов для автоматизации вашего бизнеса</p>
             <div class="services-grid">
-                <div class="service-card glass">
-                    <div class="service-icon">💬</div>
+                <div class="service-card">
                     <h3>Telegram 24/7</h3>
                     <p>AI-ассистент отвечает клиентам мгновенно в любое время суток. Консультирует, принимает заказы, записывает на встречи.</p>
                 </div>
-                <div class="service-card glass">
-                    <div class="service-icon">📊</div>
+                <div class="service-card">
                     <h3>CRM автоматизация</h3>
                     <p>Автоматически ведёт базу клиентов, обновляет данные, создаёт задачи и напоминания. Ничего не забывает.</p>
                 </div>
-                <div class="service-card glass">
-                    <div class="service-icon">🧾</div>
+                <div class="service-card">
                     <h3>Счета и ЭДО</h3>
                     <p>Генерирует счета, договоры, акты. Интегрируется с системами электронного документооборота.</p>
                 </div>
-                <div class="service-card glass">
-                    <div class="service-icon">📱</div>
+                <div class="service-card">
                     <h3>Контент-менеджмент</h3>
                     <p>Ведёт соцсети, создаёт посты, отправляет рассылки. Держит ваших клиентов в курсе новостей.</p>
                 </div>
-                <div class="service-card glass">
-                    <div class="service-icon">🔍</div>
+                <div class="service-card">
                     <h3>Мониторинг и аналитика</h3>
                     <p>Отслеживает показатели бизнеса, предупреждает о проблемах, предлагает улучшения на основе данных.</p>
                 </div>
-                <div class="service-card glass">
-                    <div class="service-icon">🧠</div>
+                <div class="service-card">
                     <h3>Самообучение</h3>
                     <p>AI изучает специфику вашего бизнеса и становится всё эффективнее. Адаптируется под ваши процессы.</p>
                 </div>
@@ -940,6 +1005,19 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="clients" id="clients">
+        <div class="container">
+            <h2 class="section-title">Нам <span class="highlight">доверяют</span></h2>
+            <div class="clients-grid">
+                <div class="client-logo">ТехноСервис</div>
+                <div class="client-logo">АвтоПро</div>
+                <div class="client-logo">МедиаГруп</div>
+                <div class="client-logo">ФинКонсалт</div>
             </div>
         </div>
     </section>
